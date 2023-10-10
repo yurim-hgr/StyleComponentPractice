@@ -23,25 +23,25 @@ const Emoji = styled.span`
   font-size: 36px;
   `;
 
-const Box = styled.div`
-  background-color: ${(props) => props.bgcolor};
-  width: 100px;
-  height: 100px;
-  animation: ${rotateAnimation} 1s linear infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// const Box = styled.div`
+//   background-color: ${(props) => props.bgcolor};
+//   width: 100px;
+//   height: 100px;
+//   animation: ${rotateAnimation} 1s linear infinite;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
   
-  ${Emoji}:hover {
-    font-size: 55px;
-  }
+//   ${Emoji}:hover {
+//     font-size: 55px;
+//   }
   
   
   
-`;
-const Circle = styled(Box)`
-  border-radius: 50px;
-`;
+// `;
+// const Circle = styled(Box)`
+//   border-radius: 50px;
+// `;
 const Btn = styled.button`
 
   background-color: tomato;
