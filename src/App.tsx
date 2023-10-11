@@ -5,25 +5,17 @@ import { useState } from "react";
 
 
 function App() {
-  const [value, setValue] = useState("");
-  const onChange = (e: React.FormEvent<HTMLInputElement>) => {
-    const {currentTarget : {value}} = e;
-    console.log(value)
-    setValue(value);
-  }
+  const Container=  styled.div`
+    background-color: ${prop=> prop.theme.bgColor};
+  `;
 
-  const onSubmit = (e : React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("hello"+ value)
-  }
+  const Title = styled.h1`
+    color: ${props => props.theme.textColor};
+  `
   return (
-    <>
-      <form onSubmit={onSubmit}>
-        <input type="text" placeholder="username" onChange={onChange} value={value}>
-        </input>
-        <button>Login</button>
-      </form>
-    </>
+    <Container>
+      <Title>hi</Title>
+    </Container>
   );
 }
 export default App;
